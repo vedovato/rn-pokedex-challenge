@@ -1,6 +1,6 @@
 {
-  "name": "PokedexChallenge",
-  "version": "0.0.1",
+  "name": "pokedex-challenge",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -13,6 +13,8 @@
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-navigation": "^6.9.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
