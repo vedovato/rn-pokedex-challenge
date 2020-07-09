@@ -1,9 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { View, Text } from 'react-native';
 
-const About = () => (
+const About = ({ counter }) => (
   <View style={styles.wrapper}>
-    <Text style={styles.text}>Another Page</Text>
+    <Text style={styles.text}>{counter}</Text>
   </View>
 );
 
@@ -11,13 +12,13 @@ const styles = {
   wrapper: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: 'tomato',
+    alignItems: 'center',
   },
 
-  text: {
-    color: 'white',
-  },
+  text: { color: 'white', fontSize: 80 },
 };
 
-export default About;
+export default connect(state => ({
+  counter: state.counter,
+}))(About);
