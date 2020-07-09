@@ -13,15 +13,11 @@ export const defaultStyling = () => {
 };
 
 export const startStackNavigation = () => {
+  const children = [{ component: { name: 'pokedex.index' } }];
+
   Navigation.setRoot({
     root: {
-      stack: {
-        children: [
-          {
-            component: { name: 'pokedex.index' },
-          },
-        ],
-      },
+      stack: { children },
     },
   });
 };
