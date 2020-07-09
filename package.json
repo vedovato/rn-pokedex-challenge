@@ -12,7 +12,8 @@
   "dependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "react-native-navigation": "^6.9.0"
+    "react-native-navigation": "^6.9.0",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
