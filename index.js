@@ -1,20 +1,8 @@
 import { Navigation } from 'react-native-navigation';
-import App from './App';
+import { defaultStyling, startStackNavigation } from './src/utils/navigation';
+import screens from './src/utils/screens';
 
-Navigation.registerComponent('pokedex.root', () => App);
+screens();
+defaultStyling();
 
-Navigation.events().registerAppLaunchedListener(() => {
-  Navigation.setRoot({
-    root: {
-      stack: {
-        children: [
-          {
-            component: {
-              name: 'pokedex.root',
-            },
-          },
-        ],
-      },
-    },
-  });
-});
+Navigation.events().registerAppLaunchedListener(startStackNavigation);
