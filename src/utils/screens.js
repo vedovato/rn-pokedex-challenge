@@ -3,12 +3,16 @@ import { Navigation } from 'react-native-navigation';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
 
-import Index from '../screens/Index';
 import About from '../screens/About';
 
+import PokemonList from '../screens/Pokemons';
+import PokemonSingle from '../screens/Pokemon';
+
 const SCREENS = [
-  { name: 'pokedex.index', Component: Index },
   { name: 'pokedex.about', Component: About },
+
+  { name: 'pokedex.list', Component: PokemonList },
+  { name: 'pokedex.single', Component: PokemonSingle },
 ];
 
 const screens = () => {
