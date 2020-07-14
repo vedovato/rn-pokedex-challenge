@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* PokedexChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PokedexChallengeTests.m */; };
+		0D861571774A8F328DD3748B /* libPods-PokedexChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B733E44B758307814257AEBA /* libPods-PokedexChallenge.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -16,32 +17,15 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* PokedexChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PokedexChallengeTests.m */; };
-		6274BA31CD39C56169B6CAAB /* libPods-PokedexChallenge-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3217CD3DC959F66D3A7E1332 /* libPods-PokedexChallenge-tvOSTests.a */; };
-		7F253D3CE8C8ABF9C663718A /* libPods-PokedexChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F4B7EE89F3784CE297521C /* libPods-PokedexChallenge.a */; };
-		DF54690E1A444D18A32369ED /* libPods-PokedexChallenge-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857EB75AC35C58CF8315ACBF /* libPods-PokedexChallenge-tvOS.a */; };
-		FE8B2BEDD636C8CF0F977589 /* libPods-PokedexChallenge-PokedexChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C13A82FFAF99CC061D94817 /* libPods-PokedexChallenge-PokedexChallengeTests.a */; };
-		50FBC6A9C8574782962C0AD2 /* poke_badges.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 604D865419944BC08FCD72BF /* poke_badges.ttf */; };
-		82A0DAC27AD043EB9ABD5F41 /* poke_badges.woff in Resources */ = {isa = PBXBuildFile; fileRef = 2C807E60380544D39FD01F5A /* poke_badges.woff */; };
-		DBC93E043EB54BB5875E42E3 /* pokemon_badges.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27752F01027747C5BDD44283 /* pokemon_badges.ttf */; };
-		74120DDD28CB41388631DBA4 /* pokemon_badges.woff in Resources */ = {isa = PBXBuildFile; fileRef = 168A2568B2BC44F78F61118F /* pokemon_badges.woff */; };
-		EAA467A402584F00AAE2982C /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C916BEA28D04DA289A617C3 /* AntDesign.ttf */; };
-		50C1A4CC0B3B47DC88EA5D1E /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40464BD683794DB9AEF2BCF7 /* Entypo.ttf */; };
-		F0AD835509AE4E9AAB5A5D9E /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9986A954A9547ACB6845A78 /* EvilIcons.ttf */; };
-		E0DA5F20B6CD41FDB25EA138 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7B2A4545884586B6F308A2 /* Feather.ttf */; };
-		B9BBD4D8552B44E3A4E313CA /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1BCEA1EDB464E898A734769 /* FontAwesome.ttf */; };
-		7E387FE8589D496484C9AE1C /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09AA41F4D48040EBA0E79FCB /* FontAwesome5_Brands.ttf */; };
-		C295661B75AC4EBA85205E7E /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06806837586A4BB4B767596C /* FontAwesome5_Regular.ttf */; };
-		D7B3EB448A21460587002010 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 837EA0A82D7D42D089ED8E00 /* FontAwesome5_Solid.ttf */; };
-		DB065D85FE474479ABD18801 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E95D6A0884C71B7B9CA5C /* Fontisto.ttf */; };
-		315200ABEDAE4FF0AD8BCE66 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2E7932359A04009A2E28D6D /* Foundation.ttf */; };
-		DA7E61E10C8B49FAA794645C /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 267B1736444043C9A8DF32D4 /* Ionicons.ttf */; };
-		DEA9D34F86DA4DCE8543A5E2 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 398A54E998154CAABEE63654 /* MaterialCommunityIcons.ttf */; };
-		B51C55DA873840CA9EEF7BFD /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7493062686F474B89696B41 /* MaterialIcons.ttf */; };
-		93EDE59803D4445591CF01D1 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8003B160D3E043EBA3876E15 /* Octicons.ttf */; };
-		9D6B90511882437AA3CB46A6 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71DD44F795FA4E5FBC105B64 /* SimpleLineIcons.ttf */; };
-		B79CB95907FA49CA96B7AAD4 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0062BD25715F4594937A0755 /* Zocial.ttf */; };
-		B7759821B3C44C118BE79BC4 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 885B8B15773F44A890B54C85 /* SF-Pro-Display-Bold.otf */; };
-		DC9640794AE6406FB8EA1F33 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6588574E099C49F892F040FC /* SF-Pro-Display-Regular.otf */; };
+		383BA43E22B4B4EB5D2C8737 /* libPods-PokedexChallenge-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD52A3D77C3418E2AE7B32BD /* libPods-PokedexChallenge-tvOS.a */; };
+		7B80646824BD8C9C009C55B5 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B80646524BD8C9C009C55B5 /* SF-Pro-Display-Bold.otf */; };
+		7B80646924BD8C9C009C55B5 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B80646624BD8C9C009C55B5 /* SF-Pro-Display-Regular.otf */; };
+		7B80646A24BD8C9C009C55B5 /* pokemon_badges.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B80646724BD8C9C009C55B5 /* pokemon_badges.ttf */; };
+		7B80646E24BD8CF9009C55B5 /* pokemon_badges.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B80646724BD8C9C009C55B5 /* pokemon_badges.ttf */; };
+		7B80646F24BD8CF9009C55B5 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B80646524BD8C9C009C55B5 /* SF-Pro-Display-Bold.otf */; };
+		7B80647024BD8CF9009C55B5 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B80646624BD8C9C009C55B5 /* SF-Pro-Display-Regular.otf */; };
+		7F8C1D94B27AE1BB1AD4BA13 /* libPods-PokedexChallenge-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4917AA9AC0B8057F5DA7E26A /* libPods-PokedexChallenge-tvOSTests.a */; };
+		BB70C348B21F6570E96A0F3B /* libPods-PokedexChallenge-PokedexChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E5B18BFC5D19365DF40DB1 /* libPods-PokedexChallenge-PokedexChallengeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,51 +50,32 @@
 		00E356EE1AD99517003FC87E /* PokedexChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* PokedexChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokedexChallengeTests.m; sourceTree = "<group>"; };
-		10643813288B26A6ED30F390 /* Pods-PokedexChallenge-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-tvOSTests/Pods-PokedexChallenge-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* PokedexChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokedexChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E464728CE032E2180F5B66 /* Pods-PokedexChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge.debug.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge/Pods-PokedexChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		01CC6DECB4DBD4173392ACA2 /* Pods-PokedexChallenge-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-tvOS/Pods-PokedexChallenge-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1018B55D668B7EF44F5DC946 /* Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-PokedexChallengeTests/Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Pokédex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokédex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PokedexChallenge/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PokedexChallenge/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PokedexChallenge/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PokedexChallenge/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PokedexChallenge/main.m; sourceTree = "<group>"; };
-		20543E689A3EE749ABAB55F2 /* Pods-PokedexChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge.debug.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge/Pods-PokedexChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		27E5B18BFC5D19365DF40DB1 /* libPods-PokedexChallenge-PokedexChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexChallenge-PokedexChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* PokedexChallenge-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokedexChallenge-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* PokedexChallenge-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PokedexChallenge-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3217CD3DC959F66D3A7E1332 /* libPods-PokedexChallenge-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexChallenge-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		857EB75AC35C58CF8315ACBF /* libPods-PokedexChallenge-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexChallenge-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C13A82FFAF99CC061D94817 /* libPods-PokedexChallenge-PokedexChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexChallenge-PokedexChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97FF0B80051F7E95C8288C1E /* Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-PokedexChallengeTests/Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
-		9C5983F94AF7F7B6EF399727 /* Pods-PokedexChallenge-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-tvOS.release.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-tvOS/Pods-PokedexChallenge-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		9D66313198C5D3813EE47E4F /* Pods-PokedexChallenge-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-tvOS/Pods-PokedexChallenge-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		B1CF147BA59BD2DDF882286C /* Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-PokedexChallengeTests/Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C0C4D8D9D422B129794B1B55 /* Pods-PokedexChallenge-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-tvOSTests/Pods-PokedexChallenge-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D5F4B7EE89F3784CE297521C /* libPods-PokedexChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A38DCF18CC499D8CEBE3D2 /* Pods-PokedexChallenge-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-tvOSTests/Pods-PokedexChallenge-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4917AA9AC0B8057F5DA7E26A /* libPods-PokedexChallenge-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexChallenge-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B80646524BD8C9C009C55B5 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../src/assets/fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		7B80646624BD8C9C009C55B5 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../src/assets/fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		7B80646724BD8C9C009C55B5 /* pokemon_badges.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pokemon_badges.ttf; path = ../../src/assets/fonts/pokemon_badges.ttf; sourceTree = "<group>"; };
+		7F3815300E9C3EDCE030DD4C /* Pods-PokedexChallenge-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-tvOSTests/Pods-PokedexChallenge-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		9ABF2A6FBF33D5EBC0EB408C /* Pods-PokedexChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge.release.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge/Pods-PokedexChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B48A1181CC3040BF5174D5E6 /* Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-PokedexChallengeTests/Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B733E44B758307814257AEBA /* libPods-PokedexChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD52A3D77C3418E2AE7B32BD /* libPods-PokedexChallenge-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokedexChallenge-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA218C1E975B1D77D733F10E /* Pods-PokedexChallenge-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge-tvOS.release.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge-tvOS/Pods-PokedexChallenge-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F4AD2069E83203677E88EB07 /* Pods-PokedexChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokedexChallenge.release.xcconfig"; path = "Target Support Files/Pods-PokedexChallenge/Pods-PokedexChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		604D865419944BC08FCD72BF /* poke_badges.ttf */ = {isa = PBXFileReference; name = "poke_badges.ttf"; path = "../src/assets/fonts/poke_badges.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2C807E60380544D39FD01F5A /* poke_badges.woff */ = {isa = PBXFileReference; name = "poke_badges.woff"; path = "../src/assets/fonts/poke_badges.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		27752F01027747C5BDD44283 /* pokemon_badges.ttf */ = {isa = PBXFileReference; name = "pokemon_badges.ttf"; path = "../src/assets/fonts/pokemon_badges.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		168A2568B2BC44F78F61118F /* pokemon_badges.woff */ = {isa = PBXFileReference; name = "pokemon_badges.woff"; path = "../src/assets/fonts/pokemon_badges.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9C916BEA28D04DA289A617C3 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		40464BD683794DB9AEF2BCF7 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A9986A954A9547ACB6845A78 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2E7B2A4545884586B6F308A2 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D1BCEA1EDB464E898A734769 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		09AA41F4D48040EBA0E79FCB /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		06806837586A4BB4B767596C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		837EA0A82D7D42D089ED8E00 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1C8E95D6A0884C71B7B9CA5C /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A2E7932359A04009A2E28D6D /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		267B1736444043C9A8DF32D4 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		398A54E998154CAABEE63654 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A7493062686F474B89696B41 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8003B160D3E043EBA3876E15 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		71DD44F795FA4E5FBC105B64 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0062BD25715F4594937A0755 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		885B8B15773F44A890B54C85 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Bold.otf"; path = "../src/assets/fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6588574E099C49F892F040FC /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE8B2BEDD636C8CF0F977589 /* libPods-PokedexChallenge-PokedexChallengeTests.a in Frameworks */,
+				BB70C348B21F6570E96A0F3B /* libPods-PokedexChallenge-PokedexChallengeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F253D3CE8C8ABF9C663718A /* libPods-PokedexChallenge.a in Frameworks */,
+				0D861571774A8F328DD3748B /* libPods-PokedexChallenge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF54690E1A444D18A32369ED /* libPods-PokedexChallenge-tvOS.a in Frameworks */,
+				383BA43E22B4B4EB5D2C8737 /* libPods-PokedexChallenge-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6274BA31CD39C56169B6CAAB /* libPods-PokedexChallenge-tvOSTests.a in Frameworks */,
+				7F8C1D94B27AE1BB1AD4BA13 /* libPods-PokedexChallenge-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,17 +145,42 @@
 			name = PokedexChallenge;
 			sourceTree = "<group>";
 		};
+		2C333E152752FFA87A60CF2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00E464728CE032E2180F5B66 /* Pods-PokedexChallenge.debug.xcconfig */,
+				9ABF2A6FBF33D5EBC0EB408C /* Pods-PokedexChallenge.release.xcconfig */,
+				B48A1181CC3040BF5174D5E6 /* Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig */,
+				1018B55D668B7EF44F5DC946 /* Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig */,
+				01CC6DECB4DBD4173392ACA2 /* Pods-PokedexChallenge-tvOS.debug.xcconfig */,
+				EA218C1E975B1D77D733F10E /* Pods-PokedexChallenge-tvOS.release.xcconfig */,
+				35A38DCF18CC499D8CEBE3D2 /* Pods-PokedexChallenge-tvOSTests.debug.xcconfig */,
+				7F3815300E9C3EDCE030DD4C /* Pods-PokedexChallenge-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				D5F4B7EE89F3784CE297521C /* libPods-PokedexChallenge.a */,
-				8C13A82FFAF99CC061D94817 /* libPods-PokedexChallenge-PokedexChallengeTests.a */,
-				857EB75AC35C58CF8315ACBF /* libPods-PokedexChallenge-tvOS.a */,
-				3217CD3DC959F66D3A7E1332 /* libPods-PokedexChallenge-tvOSTests.a */,
+				B733E44B758307814257AEBA /* libPods-PokedexChallenge.a */,
+				27E5B18BFC5D19365DF40DB1 /* libPods-PokedexChallenge-PokedexChallengeTests.a */,
+				CD52A3D77C3418E2AE7B32BD /* libPods-PokedexChallenge-tvOS.a */,
+				4917AA9AC0B8057F5DA7E26A /* libPods-PokedexChallenge-tvOSTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B80646224BD78A0009C55B5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7B80646724BD8C9C009C55B5 /* pokemon_badges.ttf */,
+				7B80646524BD8C9C009C55B5 /* SF-Pro-Display-Bold.otf */,
+				7B80646624BD8C9C009C55B5 /* SF-Pro-Display-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -203,13 +193,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				7B80646224BD78A0009C55B5 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* PokedexChallenge */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PokedexChallengeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				9118D241095D4FC226D639C3 /* Pods */,
 				CE50C22A0DAD40B092BFDF24 /* Resources */,
+				2C333E152752FFA87A60CF2C /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -219,7 +210,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* PokedexChallenge.app */,
+				13B07F961A680F5B00A75B9A /* Pokédex.app */,
 				00E356EE1AD99517003FC87E /* PokedexChallengeTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* PokedexChallenge-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* PokedexChallenge-tvOSTests.xctest */,
@@ -227,51 +218,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9118D241095D4FC226D639C3 /* Pods */ = {
+		CE50C22A0DAD40B092BFDF24 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				20543E689A3EE749ABAB55F2 /* Pods-PokedexChallenge.debug.xcconfig */,
-				F4AD2069E83203677E88EB07 /* Pods-PokedexChallenge.release.xcconfig */,
-				B1CF147BA59BD2DDF882286C /* Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig */,
-				97FF0B80051F7E95C8288C1E /* Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig */,
-				9D66313198C5D3813EE47E4F /* Pods-PokedexChallenge-tvOS.debug.xcconfig */,
-				9C5983F94AF7F7B6EF399727 /* Pods-PokedexChallenge-tvOS.release.xcconfig */,
-				C0C4D8D9D422B129794B1B55 /* Pods-PokedexChallenge-tvOSTests.debug.xcconfig */,
-				10643813288B26A6ED30F390 /* Pods-PokedexChallenge-tvOSTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		CE50C22A0DAD40B092BFDF24 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				604D865419944BC08FCD72BF /* poke_badges.ttf */,
-				2C807E60380544D39FD01F5A /* poke_badges.woff */,
-				27752F01027747C5BDD44283 /* pokemon_badges.ttf */,
-				168A2568B2BC44F78F61118F /* pokemon_badges.woff */,
-				9C916BEA28D04DA289A617C3 /* AntDesign.ttf */,
-				40464BD683794DB9AEF2BCF7 /* Entypo.ttf */,
-				A9986A954A9547ACB6845A78 /* EvilIcons.ttf */,
-				2E7B2A4545884586B6F308A2 /* Feather.ttf */,
-				D1BCEA1EDB464E898A734769 /* FontAwesome.ttf */,
-				09AA41F4D48040EBA0E79FCB /* FontAwesome5_Brands.ttf */,
-				06806837586A4BB4B767596C /* FontAwesome5_Regular.ttf */,
-				837EA0A82D7D42D089ED8E00 /* FontAwesome5_Solid.ttf */,
-				1C8E95D6A0884C71B7B9CA5C /* Fontisto.ttf */,
-				A2E7932359A04009A2E28D6D /* Foundation.ttf */,
-				267B1736444043C9A8DF32D4 /* Ionicons.ttf */,
-				398A54E998154CAABEE63654 /* MaterialCommunityIcons.ttf */,
-				A7493062686F474B89696B41 /* MaterialIcons.ttf */,
-				8003B160D3E043EBA3876E15 /* Octicons.ttf */,
-				71DD44F795FA4E5FBC105B64 /* SimpleLineIcons.ttf */,
-				0062BD25715F4594937A0755 /* Zocial.ttf */,
-				885B8B15773F44A890B54C85 /* SF-Pro-Display-Bold.otf */,
-				6588574E099C49F892F040FC /* SF-Pro-Display-Regular.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -280,10 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PokedexChallengeTests" */;
 			buildPhases = (
-				915A9CB4D0A98530A4A3503C /* [CP] Check Pods Manifest.lock */,
+				893CDA2567669B10C13DD947 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				24F1FA88898FC3B5D3B31676 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,12 +252,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PokedexChallenge" */;
 			buildPhases = (
-				1E2641147A4BF4F595D30CCC /* [CP] Check Pods Manifest.lock */,
+				EBDDBFBCE3073F64B4042FA9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				533FA8C431099F3F3B5B2DBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,14 +266,14 @@
 			);
 			name = PokedexChallenge;
 			productName = PokedexChallenge;
-			productReference = 13B07F961A680F5B00A75B9A /* PokedexChallenge.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Pokédex.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* PokedexChallenge-tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "PokedexChallenge-tvOS" */;
 			buildPhases = (
-				A5A1BACF492DE9D956316823 /* [CP] Check Pods Manifest.lock */,
+				07E2AB7B3B5E0F71619C0CA4 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -339,7 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "PokedexChallenge-tvOSTests" */;
 			buildPhases = (
-				3F03A0E08C1FF4269C64865A /* [CP] Check Pods Manifest.lock */,
+				D41F7A6E5AA74214B245CBC1 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -414,29 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7B80646A24BD8C9C009C55B5 /* pokemon_badges.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				50FBC6A9C8574782962C0AD2 /* poke_badges.ttf in Resources */,
-				82A0DAC27AD043EB9ABD5F41 /* poke_badges.woff in Resources */,
-				DBC93E043EB54BB5875E42E3 /* pokemon_badges.ttf in Resources */,
-				74120DDD28CB41388631DBA4 /* pokemon_badges.woff in Resources */,
-				EAA467A402584F00AAE2982C /* AntDesign.ttf in Resources */,
-				50C1A4CC0B3B47DC88EA5D1E /* Entypo.ttf in Resources */,
-				F0AD835509AE4E9AAB5A5D9E /* EvilIcons.ttf in Resources */,
-				E0DA5F20B6CD41FDB25EA138 /* Feather.ttf in Resources */,
-				B9BBD4D8552B44E3A4E313CA /* FontAwesome.ttf in Resources */,
-				7E387FE8589D496484C9AE1C /* FontAwesome5_Brands.ttf in Resources */,
-				C295661B75AC4EBA85205E7E /* FontAwesome5_Regular.ttf in Resources */,
-				D7B3EB448A21460587002010 /* FontAwesome5_Solid.ttf in Resources */,
-				DB065D85FE474479ABD18801 /* Fontisto.ttf in Resources */,
-				315200ABEDAE4FF0AD8BCE66 /* Foundation.ttf in Resources */,
-				DA7E61E10C8B49FAA794645C /* Ionicons.ttf in Resources */,
-				DEA9D34F86DA4DCE8543A5E2 /* MaterialCommunityIcons.ttf in Resources */,
-				B51C55DA873840CA9EEF7BFD /* MaterialIcons.ttf in Resources */,
-				93EDE59803D4445591CF01D1 /* Octicons.ttf in Resources */,
-				9D6B90511882437AA3CB46A6 /* SimpleLineIcons.ttf in Resources */,
-				B79CB95907FA49CA96B7AAD4 /* Zocial.ttf in Resources */,
-				B7759821B3C44C118BE79BC4 /* SF-Pro-Display-Bold.otf in Resources */,
-				DC9640794AE6406FB8EA1F33 /* SF-Pro-Display-Regular.otf in Resources */,
+				7B80646924BD8C9C009C55B5 /* SF-Pro-Display-Regular.otf in Resources */,
+				7B80646824BD8C9C009C55B5 /* SF-Pro-Display-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +379,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B80646E24BD8CF9009C55B5 /* pokemon_badges.ttf in Resources */,
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+				7B80647024BD8CF9009C55B5 /* SF-Pro-Display-Regular.otf in Resources */,
+				7B80646F24BD8CF9009C55B5 /* SF-Pro-Display-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,9 +408,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		1E2641147A4BF4F595D30CCC /* [CP] Check Pods Manifest.lock */ = {
+		07E2AB7B3B5E0F71619C0CA4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -487,11 +425,59 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PokedexChallenge-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PokedexChallenge-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24F1FA88898FC3B5D3B31676 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokedexChallenge-PokedexChallengeTests/Pods-PokedexChallenge-PokedexChallengeTests-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokedexChallenge-PokedexChallengeTests/Pods-PokedexChallenge-PokedexChallengeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -508,29 +494,55 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		3F03A0E08C1FF4269C64865A /* [CP] Check Pods Manifest.lock */ = {
+		533FA8C431099F3F3B5B2DBD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-PokedexChallenge/Pods-PokedexChallenge-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PokedexChallenge-tvOSTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokedexChallenge/Pods-PokedexChallenge-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		915A9CB4D0A98530A4A3503C /* [CP] Check Pods Manifest.lock */ = {
+		893CDA2567669B10C13DD947 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -552,7 +564,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A5A1BACF492DE9D956316823 /* [CP] Check Pods Manifest.lock */ = {
+		D41F7A6E5AA74214B245CBC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -567,7 +579,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PokedexChallenge-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PokedexChallenge-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBDDBFBCE3073F64B4042FA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokedexChallenge-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -679,7 +713,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1CF147BA59BD2DDF882286C /* Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig */;
+			baseConfigurationReference = B48A1181CC3040BF5174D5E6 /* Pods-PokedexChallenge-PokedexChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -702,7 +736,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97FF0B80051F7E95C8288C1E /* Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig */;
+			baseConfigurationReference = 1018B55D668B7EF44F5DC946 /* Pods-PokedexChallenge-PokedexChallengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -722,11 +756,11 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20543E689A3EE749ABAB55F2 /* Pods-PokedexChallenge.debug.xcconfig */;
+			baseConfigurationReference = 00E464728CE032E2180F5B66 /* Pods-PokedexChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -734,13 +768,14 @@
 				);
 				INFOPLIST_FILE = PokedexChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = PokedexChallenge;
+				PRODUCT_NAME = "Pokédex";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -749,20 +784,21 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4AD2069E83203677E88EB07 /* Pods-PokedexChallenge.release.xcconfig */;
+			baseConfigurationReference = 9ABF2A6FBF33D5EBC0EB408C /* Pods-PokedexChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				INFOPLIST_FILE = PokedexChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = PokedexChallenge;
+				PRODUCT_NAME = "Pokédex";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -770,7 +806,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D66313198C5D3813EE47E4F /* Pods-PokedexChallenge-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 01CC6DECB4DBD4173392ACA2 /* Pods-PokedexChallenge-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -798,7 +834,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C5983F94AF7F7B6EF399727 /* Pods-PokedexChallenge-tvOS.release.xcconfig */;
+			baseConfigurationReference = EA218C1E975B1D77D733F10E /* Pods-PokedexChallenge-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -826,7 +862,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0C4D8D9D422B129794B1B55 /* Pods-PokedexChallenge-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 35A38DCF18CC499D8CEBE3D2 /* Pods-PokedexChallenge-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -853,7 +889,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10643813288B26A6ED30F390 /* Pods-PokedexChallenge-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 7F3815300E9C3EDCE030DD4C /* Pods-PokedexChallenge-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
