@@ -40,17 +40,16 @@ class PokemonListItem extends React.PureComponent {
 const Button = styled(View)`
   background: ${({ type }) => THEME[type].bg};
   border-radius: 10px;
-
-  margin: 15px auto;
   padding: 20px;
+  margin: 15px auto;
   min-height: 125px;
   width: 90%;
 `;
 
 const Pattern = styled(Image)`
-  resize-mode: contain;
+  resize-mode: cover;
   position: absolute;
-  height: 115px;
+  height: 145%;
   width: 85%;
   right: 0;
   top: 0;

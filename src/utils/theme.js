@@ -1,3 +1,16 @@
+import { Platform } from 'react-native';
+const isIOS = Platform.OS === 'ios';
+
+export const fonts = {
+  SFRegular: isIOS ? 'SFProDisplay-Regular' : 'SF-Pro-Display-Regular',
+  SFBold: isIOS ? 'SFProDisplay-Bold' : 'SF-Pro-Display-Bold',
+};
+
+export const colors = {
+  dark: '#17171B',
+  text: '#747476',
+};
+
 export const THEME = {
   default: { badge: '#c1c1c1', bg: '#c9c9c9' },
   bug: { badge: '#8CB330', bg: '#8BD674' },

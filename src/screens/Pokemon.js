@@ -75,8 +75,8 @@ const Pattern = styled(Image)`
   width: 70px;
   height: 70px;
   position: absolute;
-  right: 0;
   bottom: -40px;
+  right: 0;
 `;
 
 export default PokemonSingle;

@@ -1,20 +1,17 @@
 import { Text } from 'react-native';
 import styled from 'styled-components';
 
-const colors = {
-  dark: '#17171B',
-};
+import { fonts, colors } from '../utils/theme';
 
 const CustomText = styled(Text)`
   color: ${({ color }) => color ?? colors.dark};
-  font-family: SF-Pro-Display-Regular;
   font-size: ${({ fs }) => fs ?? 20}px;
-  font-weight: 500;
+  font-family: ${fonts.SFRegular};
 
   ${({ center }) => center && 'text-align:center'};
   ${({ capitalize }) => capitalize && 'text-transform: capitalize'};
   ${({ uppercase }) => uppercase && 'text-transform: uppercase '};
-  ${({ bold }) => bold && 'font-family: SF-Pro-Display-Bold'};
+  ${({ bold }) => bold && 'font-family:' + fonts.SFBold};
 
   margin-top: ${({ mt }) => mt ?? 0}px;
   margin-right: ${({ mr }) => mr ?? 0}px;
@@ -29,9 +26,9 @@ const CustomText = styled(Text)`
 `;
 
 const POKE_ID = `
-	font-family: SF-Pro-Display-Bold;
-	font-size: 16px;
 	color: ${colors.dark};
+	font-family: ${fonts.SFBold};
+	font-size: 16px;
 	opacity: 0.6
 `;
 
