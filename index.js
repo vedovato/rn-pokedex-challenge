@@ -3,6 +3,8 @@ import { defaultStyling, startStackNavigation } from './src/utils/navigation';
 import screens from './src/utils/screens';
 
 screens();
-defaultStyling();
 
-Navigation.events().registerAppLaunchedListener(startStackNavigation);
+Navigation.events().registerAppLaunchedListener(() => {
+  startStackNavigation();
+  defaultStyling();
+});
