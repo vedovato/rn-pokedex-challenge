@@ -1,37 +1,17 @@
-import React, { useState } from 'react';
-import { TabView, SceneMap } from 'react-native-tab-view';
+import React from 'react';
+import { Navigation } from 'react-native-navigation';
+import { SafeAreaView, View, Image, ImageBackground } from 'react-native';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
-import {
-  SafeAreaView,
-  Dimensions,
-  View,
-  Image,
-  ImageBackground,
-} from 'react-native';
-
-import { THEME } from '../utils/theme';
+import Billboard from '../components/Billboard';
 import PokemonInfo from '../components/PokemonInfo';
 import PokemonPicture from '../components/PokemonPicture';
-import Text from '../components/Text';
-import ProgressBar from '../components/ProgressBar';
+import PokeTabs from '../components/Single/Tabs';
 
+import { THEME } from '../utils/theme';
 import HEADER_PATTERN from '../assets/single-header-bg.png';
 import CIRCLE from '../assets/single-header-circle.png';
-
-const FirstRoute = () => (
-  <View style={[styles.scene, { backgroundColor: '#ff4081' }]}>
-    <Text>Hello, World</Text>
-    <ProgressBar value={56} />
-  </View>
-);
-
-const SecondRoute = () => (
-  <View style={[styles.scene, { backgroundColor: '#673ab7' }]} />
-);
-
-const initialLayout = { width: Dimensions.get('window').width };
 
 const PokemonSingle = props => {
   const { id, name, types } = useSelector(
@@ -39,28 +19,18 @@ const PokemonSingle = props => {
   );
   const TYPE = types[0]?.type?.name ?? 'default';
 
-  const [index, setIndex] = useState(0);
-  const [routes] = useState([
-    { key: 'first', title: 'First' },
-    { key: 'second', title: 'Second' },
-  ]);
-
-  const renderScene = SceneMap({
-    first: FirstRoute,
-    second: SecondRoute,
+  Navigation.mergeOptions(props.componentId, {
+    topBar: { visible: true },
+    statusBar: {
+      backgroundColor: THEME[TYPE].bg,
+      style: 'light',
+    },
   });
-
-  const x = { position: 'absolute', left: '-50%', width: 1000 };
 
   return (
     <Wrapper type={TYPE}>
-      <View style={styles.billboard}>
-        <View style={styles.billboardInner}>
-          <Text uppercase bold color="white" fs={110} style={x}>
-            {name}
-          </Text>
-        </View>
-
+      <View style={styles.header}>
+        <Billboard name={name} blend={TYPE} />
         <Pattern source={HEADER_PATTERN} />
 
         <InfoWrapper>
@@ -68,48 +38,45 @@ const PokemonSingle = props => {
             <PokemonPicture id={id} />
           </ImageBackground>
 
-          <PokemonInfo name={name} />
+          <View style={styles.content}>
+            <PokemonInfo name={name} />
+          </View>
         </InfoWrapper>
       </View>
 
-      <TabView
-        navigationState={{ index, routes }}
-        renderScene={renderScene}
-        onIndexChange={setIndex}
-        initialLayout={initialLayout}
-      />
+      <PokeTabs name={name} type={TYPE} />
     </Wrapper>
   );
 };
 
 const styles = {
-  billboard: { height: 250, backgroundColor: 'green' },
-  billboardInner: { opacity: 0.3 },
-  circle: { width: 130, height: 130 },
+  header: { height: 260 },
+  circle: { width: 130, height: 130, marginLeft: 15 },
+  content: { marginHorizontal: 20 },
   scene: { flex: 1 },
 };
 
 const Wrapper = styled(SafeAreaView)`
-  background: ${({ type }) => THEME[type]?.bg};
+  background: ${props => THEME[props.type].bg};
   flex: 1;
 `;
 
 const InfoWrapper = styled(View)`
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   align-self: center;
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   width: 85%;
 `;
 
 const Pattern = styled(Image)`
-  width: 35px;
-  height: 65px;
+  width: 70px;
+  height: 70px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -40px;
 `;
 
 export default PokemonSingle;
