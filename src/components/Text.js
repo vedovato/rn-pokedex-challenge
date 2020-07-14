@@ -21,20 +21,22 @@ const CustomText = styled(Text)`
   margin-left: ${({ ml }) => ml ?? 0}px;
 
   ${({ pokeId }) => pokeId && POKE_ID};
+  ${({ stat }) => stat && STAT};
   ${({ badge }) => badge && BADGE};
 
-  ${({ shabblas }) => shabblas && SHAB};
-`;
-
-const SHAB = `
-	font-size: 120px;
-flex-shrink: 0
+  ${({ style }) => style};
 `;
 
 const POKE_ID = `
-	font-size: 12px;
-	font-weight: 700;
+	font-family: SF-Pro-Display-Bold;
+	font-size: 16px;
 	color: ${colors.dark};
+	opacity: 0.6
+`;
+
+const STAT = `
+	font-size: 16px;
+	font-weight: bold;
 `;
 
 const BADGE = `
