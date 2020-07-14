@@ -1,44 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FlatList } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { THEME } from '../utils/theme';
+import { FETCH_POKEMON_LIST_NEXT } from '../redux/types';
 import { pushScreen } from '../utils/navigation';
-import ListHeader from './PokemonListHeader';
+
 import ListItem from './PokemonListItem';
+import ListHeader from './ListHeader';
 
-const PokemonList = ({ data, cId }) => {
+const PokemonList = ({ cId }) => {
+  const { root, pokemons } = useSelector(state => state);
+  const dispatch = useDispatch();
+
+  const [userInput, setUserInput] = useState('');
+
+  const FILTER = Object.keys(pokemons).filter(name => {
+    const pokemon = pokemons[name];
+
+    return (
+      pokemon?.name.includes(userInput.toLowerCase()) ||
+      pokemon?.id === Number(userInput) ||
+      userInput === ''
+    );
+  });
+
   const _pushScreen = name => {
-    const { type } = data[name].types[0];
-
-    const statusBar = {
-      backgroundColor: THEME[type.name].bg,
-      style: 'light',
-    };
-
-    const topBar = {
-      title: { text: name },
-      drawBehind: true,
-    };
-
     pushScreen({
       componentId: cId,
       name: 'pokedex.single',
-      options: { statusBar, topBar },
       passProps: { name },
     });
   };
 
+  const handleLoadMore = () => {
+    dispatch({ type: FETCH_POKEMON_LIST_NEXT, payload: root?.next ?? null });
+  };
+
   return (
     <FlatList
-      data={Object.keys(data)}
+      data={FILTER}
       keyExtractor={key => key}
-      ListHeaderComponent={() => <ListHeader />}
+      onEndReached={handleLoadMore}
+      onEndReachedThreshold={0.3}
+      ListHeaderComponent={
+        <ListHeader setUserInput={setUserInput} userInput={userInput} />
+      }
       renderItem={({ item }) => (
-        <ListItem
-          data={data[item]}
-          onPress={() => _pushScreen(data[item]?.name)}
-          cId={cId}
-        />
+        <ListItem onPress={_pushScreen} data={pokemons[item]} cId={cId} />
       )}
     />
   );

@@ -8,27 +8,34 @@ import Picture from './PokemonPicture';
 import { THEME } from '../utils/theme';
 import PATTERN from '../assets/list-item-bg.png';
 
-const PokemonListItem = ({ data, onPress }) => {
-  const { id, name, types } = data;
-  const TYPE = (types && types[0]?.type?.name) ?? 'default';
-  const PIC = { position: 'absolute', right: 10, top: -20 };
+const PIC = { position: 'absolute', right: 10, top: -20 };
 
-  return (
-    <TouchableOpacity onPress={onPress} activeOpacity={1}>
-      <Button type={TYPE}>
-        <Pattern source={PATTERN} />
+class PokemonListItem extends React.PureComponent {
+  render() {
+    const { id, name, types } = this.props.data;
+    const TYPE = (types && types[0]?.type?.name) ?? 'default';
 
-        {data && <PokemonInfo name={name} />}
+    return (
+      <TouchableOpacity
+        onPress={() => this.props.onPress(name)}
+        style={{ backgroundColor: 'white' }}
+        activeOpacity={1}>
+        <Button type={TYPE}>
+          <Pattern source={PATTERN} />
 
-        {id && (
-          <View style={PIC}>
-            <Picture id={id} />
-          </View>
-        )}
-      </Button>
-    </TouchableOpacity>
-  );
-};
+          {id && (
+            <>
+              <PokemonInfo name={name} />
+              <View style={PIC}>
+                <Picture id={id} />
+              </View>
+            </>
+          )}
+        </Button>
+      </TouchableOpacity>
+    );
+  }
+}
 
 const Button = styled(View)`
   background: ${({ type }) => THEME[type].bg};
@@ -36,8 +43,9 @@ const Button = styled(View)`
   border-radius: 10px;
   elevation: 4;
 
-  margin: 20px auto;
+  margin: 15px auto;
   padding: 20px;
+  min-height: 125px;
   width: 90%;
 `;
 
