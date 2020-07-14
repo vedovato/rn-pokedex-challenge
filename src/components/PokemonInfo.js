@@ -11,7 +11,7 @@ const PokemonInfo = prop => {
 
   return (
     <View>
-      <Text pokeId>#{id}</Text>
+      <Text pokeId>#{String(id).padStart(3, '0')}</Text>
       <Text {...NAME}>{name}</Text>
       {types?.length && <Badge data={types} />}
     </View>
