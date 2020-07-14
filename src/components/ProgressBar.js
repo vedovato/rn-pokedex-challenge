@@ -10,15 +10,15 @@ const ProgressBar = props => (
 
 const Wrapper = styled(View)`
   border-radius: 2px;
-  background: blue;
-  width: 100%;
+  background: #f1f1f1;
   height: 4px;
+  flex: 1;
 `;
 
 const Progress = styled(View)`
   width: ${props => props.value}%;
+  background: ${props => props.color};
   border-radius: 20px;
-  background: yellow;
   height: 100%;
 `;
 
