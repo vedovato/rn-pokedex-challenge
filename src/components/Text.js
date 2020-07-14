@@ -11,6 +11,7 @@ const CustomText = styled(Text)`
   font-size: ${({ fs }) => fs ?? 20}px;
   font-weight: 500;
 
+  ${({ center }) => center && 'text-align:center'};
   ${({ capitalize }) => capitalize && 'text-transform: capitalize'};
   ${({ uppercase }) => uppercase && 'text-transform: uppercase '};
   ${({ bold }) => bold && 'font-family: SF-Pro-Display-Bold'};
