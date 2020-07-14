@@ -9,10 +9,9 @@ export const defaultStyling = () => {
 
     topBar: {
       background: { color: 'transparent' },
-      title: { color: 'white', alignment: 'center' },
-      backButton: { color: 'blue' },
+      backButton: { color: 'white' },
 
-      drawBehind: false,
+      drawBehind: true,
       elevation: 0, // android
       noBorder: true, // ios
     },
@@ -26,9 +25,6 @@ export const startStackNavigation = () => {
     root: {
       stack: {
         children,
-        options: {
-          topBar: { visible: false },
-        },
       },
     },
   });
