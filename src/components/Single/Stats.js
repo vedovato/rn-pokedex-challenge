@@ -1,9 +1,9 @@
 import React from 'react';
-import { ScrollView, View } from 'react-native';
+import { ScrollView, View, Platform } from 'react-native';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
-import { THEME } from '../../utils/theme';
+import { colors, THEME } from '../../utils/theme';
 import ProgressBar from '../ProgressBar';
 import Text from '../Text';
 
@@ -37,12 +37,12 @@ const PokemonStats = ({ name, type }) => {
             bold
             capitalize
             fs={12}
-            color="#17171B"
+            color={colors.dark}
             style={{ width: '22%' }}>
             {DICT[item.stat.name] ?? item.stat.name}
           </Text>
 
-          <Text color="#747476" fs={16} mr={20} style={styles.stat}>
+          <Text color={colors.text} fs={16} mr={20} style={styles.stat}>
             {item.base_stat}
           </Text>
 
@@ -61,9 +61,12 @@ const styles = {
     padding: 30,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
+    borderBottomLeftRadius: Platform.OS === 'ios' ? 30 : 0,
+    borderBottomRightRadius: Platform.OS === 'ios' ? 30 : 0,
     backgroundColor: 'white',
   },
-  stat: { width: 30, textAlign: 'right' },
+
+  stat: { width: 45, textAlign: 'right' },
 };
 
 const StatWrapper = styled(View)`

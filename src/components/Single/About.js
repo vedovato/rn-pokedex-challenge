@@ -1,9 +1,10 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, Platform } from 'react-native';
 import styled from 'styled-components/native';
 import Text from '../Text';
 
-const SHARED = { fs: 16, color: '#747476' };
+import { colors } from '../../utils/theme';
+const SHARED = { fs: 16, color: colors.text };
 
 const PokemonAbout = () => (
   <StyledScroll>
@@ -43,6 +44,8 @@ const StyledScroll = styled(ScrollView)`
   background: white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  border-bottom-left-radius: ${Platform.OS === 'ios' ? '30px' : 0};
+  border-bottom-right-radius: ${Platform.OS === 'ios' ? '30px' : 0};
 `;
 
 export default React.memo(PokemonAbout);
