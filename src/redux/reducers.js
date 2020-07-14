@@ -1,10 +1,11 @@
-import { FETCH_POKEMON_LIST, UPDATE_POKEMON_DATA } from './types';
+import { FETCH_POKEMON_LIST, UPDATE_POKEMON_DATA, NETWORK_FAIL } from './types';
 
 const STATE = {
   root: {
     next: null,
     previous: null,
     isLoading: true,
+    hasError: false,
   },
 
   pokemons: {},
@@ -34,6 +35,15 @@ const pokemonReducer = (state = STATE, action) => {
       return {
         ...state,
         pokemons: { ...state.pokemons, ...merge(action?.payload) },
+      };
+
+    case NETWORK_FAIL:
+      return {
+        ...state,
+        root: {
+          ...state.root,
+          hasError: true,
+        },
       };
 
     default:
