@@ -1,21 +1,27 @@
 import React from 'react';
-import { View, Text, SafeAreaView } from 'react-native';
+import { View, SafeAreaView, ActivityIndicator } from 'react-native';
+import { Navigation } from 'react-native-navigation';
 import { useSelector } from 'react-redux';
 
 import PokemonList from '../components/PokemonList';
+import { THEME } from '../utils/theme';
 
 const Index = ({ componentId }) => {
-  const { root, pokemons } = useSelector(state => state);
+  const { root } = useSelector(state => state);
+
+  Navigation.mergeOptions(componentId, {
+    topBar: { visible: false },
+  });
 
   return (
     <SafeAreaView>
+      <PokemonList cId={componentId} />
+
       {root?.isLoading && (
-        <View style={{ backgroundColor: 'cyan' }}>
-          <Text>Carregando</Text>
+        <View style={{ width: '100%', justifyContent: 'center' }}>
+          <ActivityIndicator size="large" color={THEME.fire.bg} />
         </View>
       )}
-
-      <PokemonList data={pokemons} cId={componentId} />
     </SafeAreaView>
   );
 };
