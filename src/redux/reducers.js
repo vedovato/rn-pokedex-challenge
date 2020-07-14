@@ -1,25 +1,22 @@
-import {
-  INCREMENT,
-  DECREMENT,
-  FETCH_POKEMON_LIST,
-  FETCH_POKEMON_SINGLE,
-} from './types';
+import { FETCH_POKEMON_LIST, UPDATE_POKEMON_DATA } from './types';
 
 const STATE = {
-  counter: 40,
-
   root: {
     next: null,
     previous: null,
     isLoading: true,
   },
 
-  pokemons: [],
+  pokemons: {},
 };
 
-const _mergeState = more => ({ ...STATE, ...more });
+const merge = arg =>
+  arg.reduce((acc, item) => {
+    acc[item.name] = item;
+    return acc;
+  }, {});
 
-const counterReducer = (state = STATE, action) => {
+const pokemonReducer = (state = STATE, action) => {
   switch (action.type) {
     case FETCH_POKEMON_LIST:
       return {
@@ -27,31 +24,21 @@ const counterReducer = (state = STATE, action) => {
 
         root: { ...state?.root, ...action.payload.root },
 
-        // FIXME: support to deep merge
-        pokemons: action?.payload?.pokemons.reduce((acc, item) => {
-          acc[item.name] = item;
-          return acc;
-        }, {}),
-      };
-
-    case FETCH_POKEMON_SINGLE:
-      return {
-        ...state,
         pokemons: {
-          ...state?.pokemons,
-          ...action.payload,
+          ...state.pokemons,
+          ...merge(action?.payload?.pokemons),
         },
       };
 
-    case INCREMENT:
-      return _mergeState({ counter: ++state.counter });
-
-    case DECREMENT:
-      return _mergeState({ counter: --state.counter });
+    case UPDATE_POKEMON_DATA:
+      return {
+        ...state,
+        pokemons: { ...state.pokemons, ...merge(action?.payload) },
+      };
 
     default:
       return state;
   }
 };
 
-export default counterReducer;
+export default pokemonReducer;

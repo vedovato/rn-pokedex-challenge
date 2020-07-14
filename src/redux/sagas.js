@@ -1,10 +1,17 @@
-import { all, call, put } from 'redux-saga/effects';
-import { FETCH_POKEMON_LIST, FETCH_POKEMON_SINGLE } from './types';
+import { all, call, put, takeEvery } from 'redux-saga/effects';
 import pokeApi from '../utils/api';
 
-export function* fetchPokedexList() {
-  const { results, ...rest } = yield call(pokeApi, 'pokemon', '?limit=10');
+import {
+  FETCH_POKEMON_LIST,
+  FETCH_POKEMON_LIST_NEXT,
+  UPDATE_POKEMON_DATA,
+} from './types';
 
+export function* fetchPokedexList(action) {
+  const { results, ...rest } = yield call(pokeApi, action && action.payload);
+  const pokemon = yield all(results.map(item => call(pokeApi, item.url)));
+
+  // put basic pokemon info
   yield put({
     type: FETCH_POKEMON_LIST,
     payload: {
@@ -13,28 +20,19 @@ export function* fetchPokedexList() {
     },
   });
 
-  // FIXME: Move pokemon fetch logic to its own generator
-  // FIXME: Parallelize calls so they feel more async (?)
+  //  put additional info to each pokemons
+  yield put({
+    type: UPDATE_POKEMON_DATA,
+    payload: pokemon,
+  });
+}
 
-  const _RAW = yield all(
-    results.map(item => call(pokeApi, item?.url, '', true))
-  );
-
-  const _POKEMONS = _RAW.reduce((acc, item) => {
-    const { id, name, stats, abilities, sprites, types } = item;
-    const pokemon = { id, name, stats, abilities, sprites, types };
-
-    acc.push({ [name]: pokemon });
-    return acc;
-  }, []);
-
-  yield all(
-    _POKEMONS.map(item => put({ type: FETCH_POKEMON_SINGLE, payload: item }))
-  );
+export function* watchLoadMore() {
+  yield takeEvery(FETCH_POKEMON_LIST_NEXT, fetchPokedexList);
 }
 
 function* rootSaga() {
-  yield all([call(fetchPokedexList)]);
+  yield all([call(fetchPokedexList), call(watchLoadMore)]);
 }
 
 export default rootSaga;

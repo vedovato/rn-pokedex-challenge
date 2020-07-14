@@ -1,7 +1,3 @@
-export const INCREMENT = 'increment_counter';
-export const INCREMENT_ASYNC = 'increment_counter_async';
-export const DECREMENT = 'decrement_counter';
-
-export const FETCH_POKEMON_LIST = 'fetching_pokemons';
-export const FETCH_POKEMON_SINGLE = 'fetching_pokemon';
-export const SET_POKEMON_DATA = 'updating_pokemon';
+export const FETCH_POKEMON_LIST = 'FETCH_POKEMONS_LIST';
+export const FETCH_POKEMON_LIST_NEXT = 'FETCH_POKEMONS_NEXT_PAGE';
+export const UPDATE_POKEMON_DATA = 'UPDATE_POKEMON_DATA';
