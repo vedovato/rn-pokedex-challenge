@@ -11,7 +11,7 @@ const Billboard = ({ name, blend }) => (
       {name}
     </StyledText>
 
-    <LinearGradient {...GRADIENT} colors={['transparent', THEME[blend].bg]} />
+    <LinearGradient {...GRADIENT} colors={['#ffffff00', THEME[blend].bg]} />
   </>
 );
 
@@ -20,7 +20,7 @@ const GRADIENT = {
   end: { x: 0.0, y: 1.0 },
   start: { x: 0.0, y: 0.0 },
   style: { height: 130, top: 5 },
-  useViewFrame: false,
+  useViewFrame: true,
 };
 
 const StyledText = styled(Text)`
