@@ -1,4 +1,4 @@
-# OSX
+g OSX
 #
 .DS_Store
 
@@ -38,7 +38,6 @@ yarn-error.log
 # BUCK
 buck-out/
 \.buckd/
-*.keystore
 !debug.keystore
 
 # fastlane
