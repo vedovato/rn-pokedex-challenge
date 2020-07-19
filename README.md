@@ -2,6 +2,9 @@
 
 ![rn-pokedex-challenge](./SCREENS.png)
 
+## O que há de novo? ✨
+- Aba "abilities" + reducer + saga correspondentes
+
 ## Requisitos: 
 - Node 14.x
 - [Instalar e configurar React-Native](https://reactnative.dev/docs/environment-setup)
