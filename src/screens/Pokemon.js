@@ -14,9 +14,7 @@ import HEADER_PATTERN from '../assets/single-header-bg.png';
 import CIRCLE from '../assets/single-header-circle.png';
 
 const PokemonSingle = props => {
-  const { id, name, types } = useSelector(
-    state => state?.pokemons[props.name ?? 'bulbasaur']
-  );
+  const { id, name, types } = useSelector(state => state?.pokemons[props.name]);
   const TYPE = types[0]?.type?.name ?? 'default';
 
   Navigation.mergeOptions(props.componentId, {
