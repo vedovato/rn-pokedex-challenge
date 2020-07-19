@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import PokeStats from './Stats';
+import PokeAbilities from './Abilities';
 import PokeAbout from './About';
 import Text from '../Text';
 
@@ -21,6 +22,7 @@ const PokeTabs = ({ name, type }) => {
   const [index, setIndex] = useState(0);
   const [routes] = useState([
     { key: 'stats', title: 'Stats' },
+    { key: 'abilities', title: 'Abilities' },
     { key: 'about', title: 'About' },
   ]);
 
@@ -44,6 +46,8 @@ const PokeTabs = ({ name, type }) => {
     </View>
   );
 
+  const SHARED = { name, type };
+
   return (
     <TabView
       onIndexChange={setIndex}
@@ -52,7 +56,8 @@ const PokeTabs = ({ name, type }) => {
       renderTabBar={renderTabs}
       renderScene={({ route }) => {
         return {
-          stats: <PokeStats name={name} type={type} />,
+          abilities: <PokeAbilities {...SHARED} />,
+          stats: <PokeStats {...SHARED} />,
           about: <PokeAbout />,
         }[route.key];
       }}
